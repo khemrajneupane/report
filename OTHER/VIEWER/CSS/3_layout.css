@@ -1,0 +1,86 @@
+﻿@charset "utf-8";
+
+body {
+	text-align: left;
+	line-height: 1.7;
+}
+
+html {
+	margin-bottom: 0px ;
+	padding-bottom: 0px ;
+	height: 100% ;
+}
+
+/* メインカラム要素 */
+#main {
+	position: relative;
+/*	margin: 0 10px 0 290px;*/
+	margin: 0 10px 0 230px;
+	border-left: #CCC dotted 1px;
+}
+#main img.manual {
+	min-width: 600px;
+	width: 100% !important;
+}
+#main .button_top{
+	text-align: left;
+	bottom: 25px;
+	right: 25px;
+}
+
+/* サイドカラム要素 */
+#side {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	height: 100%;
+/*	width: 285px;*/
+	width: 225px;
+	padding:5px;
+	text-align: left;
+}
+#side img {
+	width: 100%;
+}
+#side h1 {
+	font-size: 150%;
+	text-align: center;
+}
+#side ul{
+	list-style:none;
+	margin : 3px;
+	padding : 3px;
+	background-color:#BBBBDD;
+}
+#side li{
+	margin : 0;
+	padding : 3px;
+}
+
+/* フッター要素 */
+#footer {
+	height: 50px;
+	margin: 0 10px 0 210px;
+	background-color:#5151A8;
+	position:relative;
+}
+#footer #copyright {
+	padding-top: 10px;
+	font-size: 85%;
+	color: #ffffff;
+	text-align: center;
+}
+#footer #copyright a:link {
+	text-decoration : none;
+	color : #ffffff;
+}
+#footer #copyright a:visited {
+	text-decoration : none;
+	color : #ffffff;
+}
+#footer #copyright a:hover {
+	text-decoration : none;
+	color : #ffffff;
+}

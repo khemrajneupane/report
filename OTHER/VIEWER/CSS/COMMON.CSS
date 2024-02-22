@@ -1,0 +1,138 @@
+﻿/* 分割された領域のスタイル */
+#page_header {
+    background-color: #1A63AD;
+}
+
+#page_body {
+    background-color: #333;
+}
+
+#page_footer {
+    background-color: #3E454C;
+}
+
+#main {
+/*	border: thin solid #cccccc;*/
+}
+
+.detail_common{
+	height: 40px;
+	background-color: #3E454C;
+    vertical-align: middle;
+    border-top: #3E454C 1px solid;
+    border-bottom: #3E454C 1px solid;
+    border-left: #666 1px solid;
+    border-right: #333 1px solid;
+}
+
+#content{
+    background-color: #3E454C;
+    height: 40px;
+/*    margin: 10px 0px 10px 10px;*/
+}
+
+#list_content {
+/*	border: thin solid #cccccc; */
+/*	margin: 10px; */
+	padding: 0px 0px 0px 0px;
+}
+
+/* クリックイベントあり */
+.pointer {
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+
+/* ヘッダー情報 */
+#header_content {
+	height: 65px;
+    width: 100%;
+	background-color: #1A63AD;
+    vertical-align: middle;
+}
+
+#detail_content {
+	height: 40px;
+	background-color: #3E454C;
+    vertical-align: middle;
+}
+
+.link_control {
+    a:link    { text-decoration:none }
+    a:visited { text-decoration:none }
+    a:hover   { text-decoration:none }
+    a:active  { text-decoration:none }
+}
+
+.link_common{
+	background-color: #3E454C;
+    vertical-align: middle;
+    border-top: #3E454C 1px solid;
+    border-bottom: #3E454C 1px solid;
+    border-left: #666 1px solid;
+    border-right: #333 1px solid;
+    margin : 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#gradient_bar {
+    height:5px;
+    background-color: #00afed;
+    background: -prefix-linear-gradient(right, #333, #00afed, #333);
+    background: linear-gradient(to right, #333, #00afed, #333);
+}
+
+/* ダイアログ */
+#folder-modal {
+    font-size: 14px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+}
+
+#reportList-modal {
+    font-size:14px;
+    display:none;
+    width: 400px; 
+    height: 300px; 
+    overflow-y: auto;
+    outline: none;
+    border: none;
+}
+
+.ui-dialog .ui-dialog-title {
+    font-size:14px;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    /* font-size:14px; */
+}
+
+.pathName {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: none;
+    border: none;
+}
+
+.exePathName {
+    resize: none;
+    height: 30%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: none;
+    border: none;
+}
+
+.study_rep_value:hover {
+    color: blue 
+} 
+
+.dialog{
+    display:none;
+}

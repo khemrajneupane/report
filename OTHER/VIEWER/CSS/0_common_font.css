@@ -1,0 +1,41 @@
+@charset "utf-8"; 
+
+.f_size10 {	font-size: 10px;}
+.f_size11 {	font-size: 11px;}
+.f_size12 {	font-size: 12px;}
+.f_size13 {	font-size: 13px;}
+.f_size14 {	font-size: 14px;}
+.f_size15 {	font-size: 15px;}
+.f_size16 {	font-size: 16px;}
+.f_size17 {	font-size: 17px;}
+.f_size18 {	font-size: 18px;}
+.f_size19 {	font-size: 19px;}
+.f_size20 {	font-size: 20px;}
+
+.line_thr {	text-decoration: line-through;}
+.line_u { text-decoration: underline;}
+.font_b { font-weight: bold;}
+
+.white { color: #FFFFFF;}
+.yellow { color:#FFFF00;}
+.blue { color:#0000FF;}
+.red { color: #FF3300;}
+.black { color:#000000;}
+.darkgray { color:#333333;}
+.gray { color:#999999;}
+.orange { color:#FF3300;}
+
+.bg_yellow{ background-color:#FFFF00;}
+.bg_darkyellow{ background: #FFE400;}
+.bg_blue{ background:#0000FF;}
+.bg_red{ background:#FF0000;}
+.bg_lightgray{ background-color:#CCCCCC;}
+.bg_gray{ background:#666666;}
+.bg_middlegray{ background:#999999;}
+.bg_darkgray{ background:#333333;}
+.bg_black{ background:#000000;}
+.bg_green{ background:#00FF00;}
+.bg_RoyalBlue{ background:#4169E1;}
+.bg_purple{ background:#39399C;}
+.bg_darkPurple{ background:#5151A8;}
+.bg_lightpurple{background:#BBBBDD;}

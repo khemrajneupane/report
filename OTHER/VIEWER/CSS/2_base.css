@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+.link {
+	margin: 20px 0;
+	font-size: 85%;
+	text-align: right;
+}
+
+* {
+	line-height: 1.4;
+}
+a:focus{
+	outline:none;
+}
+p{
+	margin-bottom:1em;
+}
+#main p strong{
+	font-size:123.1%;
+}	
+
+/* サイドカラムの大分類に使用 */
+.midasi_kuro a:link, a:visited{
+	color:#333333;
+	text-decoration: none;
+}
+.midasi_kuro a:active, a:hover{
+	text-decoration: underline;
+	color:#FF2A51;
+}
+
+/* 通常のハイパーリンク */
+a:link, a:visited {
+	color: #0a5f79;
+	text-decoration: none;
+}
+a:active, a:hover {
+	text-decoration: underline;
+	color:#FF2A51;
+}
+a:link img{
+	border:none;
+}
+a:hover img{
+	opacity:0.5;
+}
+
+.button_back{
+	margin-right:15px;
+	width:102px;
+	height:44px;
+}
+.button_next{
+	margin-left:15px;
+	width:102px;
+	height:44px;
+}
+
+/* clear */
+.clear { clear:both; }  
+.clear hr { display:none; } 
+
+.clearfix:after {
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	content: " ";
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+
+.tLeft{
+	text-align:left;
+}
+.tCenter{
+	text-align:center;
+}
+.tRight{
+	text-align:right;
+}
+
+.ul_decimal { list-style-type : decimal;}
+
+.top-5minus{margin-top:-5px;}
+.top-10minus{margin-top:-10px;}
+.left-5minus{margin-left:-5px;}
+.left-10minus{margin-left:-10px;}
+.left-20minus{margin-left:-20px;}
+.left-30minus{margin-left:-30px;}
+
+.top-5 { margin-top:5px ;}
+.top-10 { margin-top:10px ;}
+.top-15 { margin-top:15px ;}
+.top-20 { margin-top:20px ;}
+.top-25 { margin-top:25px ;}
+.bottom-0 { margin-bottom: 0px ;}
+.bottom-5 { margin-bottom: 5px ;}
+.bottom-10 { margin-bottom: 10px ;}
+.bottom-15 { margin-bottom: 15px ;}
+.bottom-20 {margin-bottom: 20px ;}
+.bottom-25 { margin-bottom: 25px ;}
+.bottom-30 { margin-bottom: 30px ;}
+.bottom-40 { margin-bottom: 40px ;}
+.bottom-50 { margin-bottom: 50px ;}
+.left-0 { margin-left: 0px ;}
+.left-5 { margin-left: 5px ;}
+.left-10 { margin-left: 10px ;}
+.left-15 { margin-left: 15px ;}
+.left-20 { margin-left: 20px ;}
+.left-25 { margin-left: 25px ;}
+.left-30 { margin-left: 30px ;}
+.left-35 { margin-left: 35px ;}
+.left-40 { margin-left: 40px ;}
+.right-5 { margin-right: 5px ;}
+.right-10 { margin-right: 10px ;}
+.right-15 { margin-right: 15px ;}
+.right-20 { margin-right: 20px ;}
+.right-25 { margin-right: 25px ;}
+.right-30 { margin-right: 30px ;}
+.right-35 { margin-right: 35px ;}
+.right-40 { margin-right: 40px ;}

@@ -1,0 +1,317 @@
+﻿body {
+    font-family: 'ＭＳ Ｐゴシック', sans-serif;
+    margin : 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color:#3E454C;
+}
+
+/* 施設情報 */
+#hospital_container {
+    height: 40px;
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+    background-color: #1A63AD;
+}
+
+#hospital_table {
+    height:40px;
+    /* width: 780px; */
+    font-size: 30px;
+    color: white;
+    background-color: #1A63AD;
+    padding   : 0px  0px   0px  0px;
+    margin    : 0px  auto  0px  auto;
+    table-layout:fixed;
+}
+
+#hospital_name 
+{
+    display:block;
+    padding-left: 10px;
+    /* width: 750px; */
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* リンク情報 */
+#link_container {
+    height: 40px;
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+    background-color: #3E454C;
+}
+
+#link_table
+{
+    height: 40px;
+    /* width: 780px; */
+    background-color: #3E454C;
+    padding   : 0px  0px   0px  0px;
+    margin    : 0px  auto  0px  auto;
+}
+
+/* 空行 */
+.blank_line {
+    height:10px;
+    background-color: #333;
+}
+
+/* 患者情報 */
+.patient_container {
+    height: 45px;
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+    background-color: #333;
+}
+
+.patient_table
+{
+    height: 45px;
+	/* width: 780px; */
+    font-size: 26px;
+    color:white;
+    background-color: #1A63AD;
+    border-top:1px solid #76A1CE;
+    border-bottom:1px solid #144A82;
+    padding   : 0px  0px   0px  0px;
+    margin    : 0px  auto  0px  auto;
+    table-layout:fixed;
+}
+.patient_id
+{
+    padding-left:10px;
+    width:170px;
+    display:inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.patient_name 
+{
+    padding-left:10px;
+    width:320px;
+    display:inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.patient_sex 
+{
+    padding-left:10px;
+	width:30px;
+}
+.patient_birth 
+{
+    padding-left:10px;
+	width:190px;
+}
+
+/* 検査情報 */
+.study_container {
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+    background-color: #333;
+}
+
+.study_table
+{
+	/* width: 780px; */
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color:#F7F9FB;
+    padding   : 0px  0px   0px  0px;
+    margin    : 0px  auto  0px  auto;
+}
+.study_table td, .study_table th 
+{
+    overflow: hidden;
+/*    
+    padding: 4px 4px 4px 4px;
+    margin: 0px  0px   0px  0px;
+*/
+    border: solid 1px #E6E6FA;
+}
+.study_table th {
+    height:25px;
+    color:#959EA7;
+    border-color:#42494F;
+    background-color: #63696F;
+}
+.study_table td {
+    height:40px;
+    font-size: 13px;
+    color:#333;
+    border-color:#C6D2DE;
+    padding:0px 3px 0px 3px;
+}
+.study_number_th {
+    font-size: 12px;
+    width: 25px;
+}
+.study_number {
+    width: 25px;
+}
+.study_date_th {
+    font-size: 12px;
+	width: 130px;
+}
+.study_date {
+	width: 130px;
+}
+.study_mod_th {
+    font-size: 12px;
+	width: 100px;
+}
+.study_mod {
+	width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.study_bui_th {
+    font-size: 12px;
+	width: 100px;
+}
+.study_bui {
+	width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.study_count_th {
+    font-size: 12px;
+	width: 45px;
+}
+.study_count {
+	width: 45px;
+	text-align:right
+}
+.study_description_th {
+    font-size: 12px;
+	width: auto;
+}
+.study_description {
+	width: auto;
+    text-align:left;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.viewer_call_th{
+    font-size: 12px;
+    width: 75px;
+}
+.viewer_call{
+    width: 75px;
+}
+.study_rep_th {
+    font-size: 12px;
+    width: 75px;
+}
+.study_rep {
+    width: 75px;
+}
+.folder_open_th {
+    font-size: 12px;
+    width: 75px;
+}
+.folder_open {
+    width: 75px;
+}
+.cellcolor1 {
+    background-color: #F7F9FB;
+}
+
+.cellcolor2 {
+    background-color: #EAEEF3;
+}
+
+.call_viewer {
+	border: none;
+    background-image:  url("../IMAGE/HYOJI01.GIF");
+    height: 26px;
+	width: 42px;
+	cursor:pointer;
+}
+.call_viewer:active {
+    background-image:  url("../IMAGE/HYOJI02.GIF");
+}
+
+.call_viewer_en {
+	border: none;
+    background-image:  url("../IMAGE/VIEW01.GIF");
+    height: 26px;
+	width: 42px;
+	cursor:pointer;
+}
+.call_viewer_en:active {
+    background-image:  url("../IMAGE/VIEW02.GIF");
+}
+
+.call_open_folder {
+	border: none;
+    background-image:  url("../IMAGE/HIRAKU01.GIF");
+    height: 26px;
+	width: 42px;
+	cursor:pointer;
+}
+.call_open_folder:active {
+    background-image:  url("../IMAGE/HIRAKU02.GIF");
+}
+
+.call_open_folder_en {
+	border: none;
+    background-image:  url("../IMAGE/OPEN01.GIF");
+    height: 26px;
+	width: 42px;
+	cursor:pointer;
+}
+.call_open_folder_en:active {
+    background-image:  url("../IMAGE/OPEN02.GIF");
+}
+
+/* 施設情報（住所等） */
+#hospital_footer_container {
+    height:100%;
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+    background-color: #3E454C;
+}
+
+#hospital_footer_table {
+    /* width: 780px; */
+    font-size: 16px;
+    color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    margin: 0px  auto 0px  auto;
+    text-align:center;
+}

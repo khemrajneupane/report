@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#pankz{
+margin: 10px 0px;
+}
+
+#pankz li{
+	display:inline;
+	list-style-type:none;
+}
+#pankz li:before{
+	margin:0 5px;
+	content:">";
+}
+#pankz li:first-child:before{
+	content:none;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>EV Lite Web 1.0.1.8</title>
+<link rel="Stylesheet" type="text/css" href="../../OTHER/VIEWER/CSS/COMMON.CSS">
+<link rel="Stylesheet" type="text/css" href="../../OTHER/VIEWER/CSS/SERIES.CSS">
+<link rel="Stylesheet" type="text/css" href="../../OTHER/VIEWER/CSS/JQUERYUI.CSS"><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/JQUERY.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/JQUERYUI.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/COMMON_MSG_EN.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/COMMON.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/DATA.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/CINE.JS"></script></head>
+<body style="background-color:#333;" onload="initCine()">
+<div id="patient_container"><input type="hidden" id="patient_no"><table id="patient_table">
+<tr style="display:table;">
+<td id="patient_name"></td>
+<td id="patient_sex"></td>
+<td id="patient_birth"></td>
+</tr>
+</table>
+</div>
+<div id="link_container">
+<table id="link_table">
+<tr>
+<td class="link_common" style="width:150px;" align="left">
+<div class="arrow"></div>
+<div style="text-align:left;"><a onclick="home()" class="pointer" style="color:#999;margin-left:35px;">
+                                        Study List
+                                    </a></div>
+</td>
+<td class="link_common" style="width:500px;"></td>
+<td class="link_common" style="text-align:center;"><a onclick="runExe('OTHER\\EVCLIENT.lnk', 'OTHER\\EVLITE\\EVClientLight.exe')" class="pointer" style="color:#00afed;">
+                                    Open DICOM images
+                                </a></td>
+</tr>
+</table>
+</div>
+<div id="gradient_bar"></div>
+<div id="detail_container">
+<table class="detail_table" style="height:5px;background-color:#333;"></table>
+<table class="detail_table" style="height:1px;background-color:#76A1CE;"></table>
+<table class="detail_table" style="height:1px;background-color:#1A63AD;"></table>
+<table class="detail_table" style="height:1px;background-color:#144A82;"></table>
+<table class="detail_table" id="study_table_id">
+<tr>
+<th class="study_date_time">
+                                Study Date
+                            </th>
+<th class="study_mod">
+                                Modality
+                            </th>
+<th class="study_bui">
+                                Body Part
+                            </th>
+<th class="study_count">
+                                Images
+                            </th>
+<th class="study_description">
+                                Study Description
+                            </th>
+<th class="study_rep">
+                                Report
+                            </th>
+</tr>
+<tr>
+<td class="study_date_time"></td>
+<td class="study_mod"></td>
+<td class="study_bui"></td>
+<td class="study_count"></td>
+<td class="study_description"></td>
+<td class="study_rep"></td>
+</tr>
+</table>
+<table class="detail_table" style="height:5px;background-color:#333;"></table>
+<table class="detail_table" id="series_table_id">
+<tr>
+<th class="series_num_th">
+                            Series No
+                        </th>
+<th class="series_mod">
+                                Modality
+                            </th>
+<th class="series_count">
+                                Images
+                            </th>
+<th class="series_protocol">
+                                Protocol Name
+                            </th>
+<th class="series_description">
+                                Series Description
+                            </th>
+</tr>
+<tr>
+<td class="series_num"></td>
+<td class="series_mod"></td>
+<td class="series_count"></td>
+<td class="series_protocol"></td>
+<td class="series_description"></td>
+</tr>
+</table>
+<table id="tool_table">
+<tr>
+<td style="width:500px"><button class="player_button" id="prevImgBtn" onclick="previousImg()"></button><button class="player_button" id="playBtn" onclick="startTimer()"></button><button class="player_button" id="pauseBtn" onclick="stopTimer()"></button><button class="player_button" id="nextImgBtn" onclick="nextImg()"></button></td>
+<td style="width:100px"></td>
+<td><button class="tile_button_normal" id="tile" onclick="doTile(this)"><span class="button_string_base button_normal_string">
+                                        3x3 view
+                                    </span></button><button class="cine_button_pressed"><span class="button_string_base button_pressed_string">
+                                        1x1 view
+                                    </span></button></td>
+</tr>
+</table>
+<table id="thumbnail_image_table">
+<tr>
+<td>
+<div id="series_thumbnail">
+<table class="thumbnail_table" id="series_thumbs">
+</table>
+</div>
+<div id="image_display">
+<div id="image_frame">
+<div id="imDiv"><img id="image" alt="Image" onclick="doTile(this)" src="../../other/viewer/image/blank.jpg" onerror="imageLoadErrorForCine(document.getElementById('imDiv'), this, 64)"></div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<div id="comment">
+                        Reference images, not for diagnosis purpose.
+                    </div>
+</div>
+<div class="dialog" id="folder-modal" title=""><textarea class="pathName" id="dirName" readonly="1"></textarea></div>
+<div class="dialog" id="exePath-modal" title="">
+<p style="margin: 5px 0px 0px 0px;">
+                        1. Move to this folder.
+                    </p><textarea class="exePathName" id="exeDirName" onclick="this.select()" readonly="1"></textarea><p style="margin: 5px 0px 0px 0px;">
+                        2. Run this file.
+                    </p><textarea class="exePathName" id="exeFileName" onclick="this.select()" readonly="1"></textarea></div>
+<div class="dialog" id="reportList-modal" title="Report List"><table id="reportList"></table></div>
+</body>
+</html>

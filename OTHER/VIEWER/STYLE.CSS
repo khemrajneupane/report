@@ -1,0 +1,406 @@
+body {
+    width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+#main 
+{
+	border: thin solid #cccccc;
+}
+#content {
+	border: thin solid #cccccc;
+	margin: 10px;
+	padding: 0px 0px 0px 0px;
+}
+
+/* 各ページのヘッダー */
+#page_header {
+	height: 57px;
+	line-height: 57px;
+	background-image: url("image/psp_banner.gif");
+}
+
+/* ヘッダー情報 */
+#header_content 
+{
+	margin: 0px 0px 0px 20px;
+	color: white;
+}
+#institution_name
+{
+	position:absolute;
+}
+#patient_name 
+{
+	margin-left: 250px;
+}
+#patient_sex 
+{
+	margin-left: 150px;
+}
+#patient_birthdate {
+	margin-left: 200px;
+}
+#menu_label {
+	font-size:x-large;
+}
+
+/* 検査情報 */
+.study_info
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+	border-bottom: thin dotted #cccccc;
+	font-weight: bold;
+}
+.study_header_info
+{
+	margin: 0px 0px 0px 0px;
+}
+.study_header
+{
+	background-image: url("image/study_info_banner.gif");
+	height: 38px;
+	line-height: 38px;
+}
+.study_date_time 
+{
+	margin-left: 10px;
+}
+.modality_info 
+{
+	margin-left: 112px;
+}
+.viewer_info
+{
+	margin-left: 310px;	
+}
+.report_info
+{
+    margin-right: 35px;
+    float: right;
+}
+
+/* マイン画面のシリーズ一覧 */
+.series_list {
+	margin-left: 0px;
+	padding: 0px 0px 0px 0px;
+}
+.series_table {
+	width: 850px;
+	margin: 10px 20px 10px 10px;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+.series_table td, .series_table th 
+{
+    border: 0px;
+    padding: 5px;
+    overflow: hidden;
+}
+.series_table td {
+	font-weight: normal;
+}
+.series_table th {
+	background-color: #cccccc;
+}
+.cellcolor {
+    background-color: #eeeeee;
+}
+.series_row_number {
+    width: 25px;
+}
+.series_number {
+    width: 25px;
+}
+.series_bui {
+	width: 90px;
+}
+.series_modality {
+	width: 70px;
+}
+.series_no_images {
+	width: 70px;
+}
+.series_protocol {
+	width: 90px;
+}
+
+/* マイン画面のサムネール一覧 */
+.tile_image_row {
+	width: 850px;
+	border: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 10px;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.thumbnail_table {
+	border-collapse: separate;
+	border-spacing: 0px;
+	border-width: 0px 0px 1px 1px;
+	/*line-height: 1px;*/
+}
+.thumbnail_table td {
+	width: 128px;
+	height: 128px;
+	border-color: transparent;
+    border-style: solid;
+    padding: 0px 0px 0px 0px;
+    border-width: 1px 1px 1px 1px;
+    background-color: black;
+	vertical-align: center;
+	text-align: center;
+}
+
+/* シネ表示とタイル表示のシリーズヘッダー */
+#series_header {
+	background-image: url("image/series_header_banner.gif");
+	height: 116px;
+	font-weight: bold;
+}
+#series_header_info {
+	margin: 0px 10px 0px 163px;
+	padding: 10px 10px 10px 10px;
+	width: 700px;
+	height: 90px;
+}
+.series_header_col {
+	margin-left: 50px;
+	width: 180px;
+	height: 90px;
+	float: left;
+}
+.series_header_text {
+	margin: 20px 0px 0px 0px;
+}
+
+/* ホーム（TOP）ボタン*/
+#home {
+	border: none;
+	background-image: url("image/top_button.gif");
+	margin-left: 25px;
+	margin-top: 15px;
+	display: block;
+	height: 39px;
+	width: 100px;
+	float: left;
+}
+
+/* タイル表示切り替わるボタン */
+.tile_button_normal {
+	border: none;
+	background-image: url("image/tile_button_normal.gif");
+	margin-left: -100px;
+	margin-top: 60px;
+	height: 39px;
+	width: 50px;
+	float: left;
+}
+.tile_button_pressed {
+	border: none;
+	background-image: url("image/tile_button_pressed.gif");
+	margin-left: -100px;
+	margin-top: 60px;
+	height: 39px;
+	width: 50px;
+	float: left;
+}
+
+/* シネ表示切り替わるボタン */
+.cine_button_normal {
+	border: none;
+	background-image: url("image/cine_button_normal.gif");
+	height: 39px;
+	width: 50px;
+	margin-left: -50px;
+	margin-top: 60px;
+	float: left;
+}
+.cine_button_pressed {
+	border: none;
+	background-image: url("image/cine_button_pressed.gif");
+	height: 39px;
+	width: 50px;
+	margin-left: -50px;
+	margin-top: 60px;
+	float: left;
+}
+
+/* シネ表示とタイル表示のシリーズフッター */
+#series_footer {
+	background-image: url("image/series_footer_banner.gif");
+	height: 66px;
+}
+
+/* タイル表示のページナビゲーションボタン */
+.page_button {
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: none;
+	width: 100px;
+	height: 66px;
+	float: left;
+	margin-top: 0px;
+}
+#previous_page {
+	background-image: url("image/previous_series_button.gif");
+	margin-left: 330px;
+}
+#next_page {
+	background-image: url("image/next_series_button.gif");
+}
+#footer_current_page {
+	float: left;
+	width: 50px;
+	height: 66px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+}
+.series_footer_text {
+	margin: 0px 0px 0px 0px;
+}
+
+/* シネ表示の再生を制御するボタン*/
+.player_button {
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 66px;
+	border: none;
+	margin-top: 0px;
+	margin-left: 0px;
+	float: left;
+}
+#prevImgBtn {
+	margin-left: 248px;
+	background-image: url("image/previous_image_button.gif");
+}
+#playBtn {
+	background-image: url("image/play_button.gif");
+}
+#pauseBtn {
+	background-image: url("image/pause_button.gif");
+}
+#nextImgBtn {
+	background-image: url("image/next_image_button.gif");
+}
+
+
+#thumbnail {
+	border: thin solid #cccccc;
+	width: 596px;
+	height: 600px;
+	margin-left: 262px;
+    padding: 0px 20px 20px 20px;
+}
+
+/* シネ表示、タイル表示時、左側に表示されるシリーズのサムネール*/
+#series_thumbnail {
+	float: left;
+	width: 147px;
+	height: 600px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: thin solid #eeeeee;
+	margin: 5px 0px 0px 5px;
+	padding: 0px 0px 0px 0px;
+}
+
+#image_display {
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 5px 5px 5px;
+	height: 600px;
+	line-height: 0;
+	background-color: #eeeeee;
+}
+
+#image_frame {
+	height: 560px;
+	width: 750px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: left;
+	padding: 40px 0px 0px 0px;
+	background-color: black;
+	text-align: center;
+}
+
+#tile_frame 
+{
+	text-align: center;
+	line-height: 0;
+	height: 540px;
+}
+
+.image_tile {
+	border: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px -1.5px 0px -1.5px;
+}
+
+#info {
+    border: 1px solid #cccccc;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    line-height: 1.0em;
+}
+
+.info_p 
+{
+	margin: 5px 10px 5px 10px;
+	padding: 0px 0px 0px 0px;
+}
+
+.info_column2 {
+	position: absolute;
+	margin-left: 100px;
+}
+
+#series_navi {
+    border: 1px solid #cccccc;
+    margin: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+/* タイル表示時のイメージテーブル */
+#image_table
+{
+	margin-top: 30px;
+	margin-left: auto;
+    margin-right: auto;
+	height: 540px;
+	border-width: 0px 0px 0px 0px;
+	border-spacing: 0;
+    border-collapse: separate;
+}
+#image_table td
+{
+	width: 180px;
+	height: 180px;
+	border-color: transparent;
+    border-style: solid;
+    padding: 0px 0px 0px 0px;
+    border-width: 1px 1px 1px 1px;
+    background-color: black;
+	vertical-align: center;
+	text-align: center;
+}
+
+
+/*フッターのリンク */
+#footer_link 
+{
+	font-size: medium;
+	margin-top: 15px;
+	float: left;
+}

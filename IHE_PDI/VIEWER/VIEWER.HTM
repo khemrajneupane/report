@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>EV Lite Web 1.0.1.8</title>
+<link rel="Stylesheet" type="text/css" href="../../OTHER/VIEWER/CSS/COMMON.CSS">
+<link rel="Stylesheet" type="text/css" href="../../OTHER/VIEWER/CSS/VIEWER.CSS">
+<link rel="Stylesheet" type="text/css" href="../../OTHER/VIEWER/CSS/JQUERYUI.CSS"><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/JQUERY.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/JQUERYUI.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/COMMON_MSG_EN.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/COMMON.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/DATA.JS"></script><script type="text/javascript" src="../../OTHER/VIEWER/JAVASCRIPT/VIEWER.JS"></script></head>
+<body onload="initViewer()">
+<div id="hospital_container">
+<table id="hospital_table">
+<tr>
+<td id="hospital_name" title=""></td>
+</tr>
+</table>
+</div>
+<div id="link_container">
+<table id="link_table">
+<tr>
+<td class="link_common" style="padding-left:10px;width:359px;font-size:13px;text-align:left;color:yellow;" align="left">
+</td>
+<td class="link_common" style="width:140px;font-size:13px;text-align:center;" align="left"><a onclick="runExe('OTHER\\EVCLIENT.lnk', 'OTHER\\EVLITE\\EVClientLight.exe')" class="pointer" style="color:#00afed;">
+                                        Open DICOM images
+                                    </a></td>
+<td class="link_common" style="width:140px;font-size:13px;text-align:center;" align="left"><a onclick="callReadme()" class="pointer" style="color:#999;">
+                                        About this media
+                                    </a></td>
+<td class="link_common" style="width:140px;font-size:13px;text-align:center;" align="left"><a onclick="callUsage()" class="pointer" style="color:#999;" id="ViewerTitleHowToUse">
+                                        How to use
+                                    </a></td>
+</tr>
+</table>
+</div>
+<div id="gradient_bar"></div>
+<div class="blank_line"></div>
+<div class="patient_container">
+<table class="patient_table">
+<tr style="display:table;margin-top:5px;">
+<td class="patient_id" title="23019496">23019496</td>
+<td class="patient_name" title="KHEM RAJ NEUPANE">KHEM RAJ NEUPANE</td>
+<td class="patient_sex">M</td>
+<td class="patient_birth">24 Jan. 1979</td>
+</tr>
+</table>
+</div>
+<div class="study_container">
+<table class="study_table">
+<tr>
+<th class="study_number_th">No</th>
+<th class="study_date_th">
+                            Study Date
+                        </th>
+<th class="study_mod_th">
+                            Modality
+                        </th>
+<th class="study_bui_th">
+                            Body Part
+                        </th>
+<th class="study_count_th">
+                            Images
+                        </th>
+<th class="study_description_th">
+                            Study Description
+                        </th>
+<th class="viewer_call_th">
+                            View images
+                        </th>
+<th class="study_rep_th">
+                            Report
+                        </th>
+<th class="folder_open_th">
+                            Folder
+                        </th>
+</tr>
+<tr class="cellcolor1">
+<td class="study_number">1</td>
+<td class="study_date">23 Jul. 2023 11:59:19AM</td>
+<td class="study_mod" title="MR">MR</td>
+<td class="study_bui" title="SPINE">SPINE</td>
+<td class="study_count">260</td>
+<td class="study_description" title="MRI WHOLE SPINE SCR WITH LS SPINE">MRI WHOLE SPINE SCR WITH LS SPINE</td>
+<td class="viewer_call"><button class="call_viewer_en" onclick="showSeriesCine(1, 1,1,1);"></button></td>
+<td class="study_rep">
+</td>
+<td class="folder_open"><button class="call_open_folder_en" onclick="folderOpen('DICOM/10064/P0000001/S0000001')"></button></td>
+</tr>
+</table>
+</div>
+<div class="blank_line"></div>
+<div id="gradient_bar"></div>
+<div id="hospital_footer_container">
+<table id="hospital_footer_table">
+<tr>
+<td>　　</td>
+</tr>
+</table>
+</div>
+<div class="dialog" id="folder-modal" title=""><textarea class="pathName" id="dirName" readonly="1"></textarea></div>
+<div class="dialog" id="exePath-modal" title="">
+<p style="margin: 5px 0px 0px 0px;">
+                            1. Move to this folder.
+                        </p><textarea class="exePathName" id="exeDirName" onclick="this.select()" readonly="1"></textarea><p style="margin: 5px 0px 0px 0px;">
+                            2. Run this file.
+                        </p><textarea class="exePathName" id="exeFileName" onclick="this.select()" readonly="1"></textarea></div>
+<div class="dialog" id="reportList-modal" title="Report List"><table id="reportList"></table></div>
+</body>
+</html>
